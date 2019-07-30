@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "29W79KB64K.carrotquest.io.CarrotApp",
+            "paths": [
+            	"/panel/?/conversation",
+            	"/panel/?/conversation/?",
+            	"/panel/account?tab=notifications",
+            	"/panel/?/users/*"
+            ]
+        }]
+    }
+}

@@ -1,14 +1,18 @@
 {
     "webcredentials": {
-        "apps": "29W79KB64K.carrotquest.io.CarrotApp.debug"
+        "apps": [
+            "29W79KB64K.carrotquest.io.CarrotApp.debug"
+        ]
     },
     "applinks": {
         "apps": [],
-        "details": [{
-            "appID": "29W79KB64K.carrotquest.io.CarrotApp.debug",
-            "paths": [
-            	"*"
-            ]
-        }]
+        "details": {
+            "29W79KB64K.carrotquest.io.CarrotApp.debug": {
+                "paths": [
+                    "*",
+                    "/
+                ]
+            }
+        }
     }
 }

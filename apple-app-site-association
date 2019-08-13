@@ -1,13 +1,13 @@
 {
+    "webcredentials": {
+        "apps": "29W79KB64K.carrotquest.io.CarrotApp.debug"
+    },
     "applinks": {
         "apps": [],
         "details": [{
-            "appID": "29W79KB64K.carrotquest.io.CarrotApp",
+            "appID": "29W79KB64K.carrotquest.io.CarrotApp.debug",
             "paths": [
-            	"/panel/?/conversation",
-            	"/panel/?/conversation/?",
-            	"/panel/account?tab=notifications",
-            	"/panel/?/users/*"
+            	"*"
             ]
         }]
     }

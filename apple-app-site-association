@@ -1,18 +1,5 @@
 {
-    "webcredentials": {
-        "apps": [
-            "29W79KB64K.carrotquest.io.CarrotApp.debug"
-        ]
-    },
-    "applinks": {
-        "apps": [],
-        "details": {
-            "29W79KB64K.carrotquest.io.CarrotApp.debug": {
-                "paths": [
-                    "*",
-                    "/
-                ]
-            }
-        }
+    "appclips": {
+        "apps": ["29W79KB64K.io.dashly.Dashly-MVP.Clip"]
     }
 }

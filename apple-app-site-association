@@ -1,4 +1,9 @@
 {
+    "webcredentials": {
+        "apps": [
+            "29W79KB64K.io.dashly.Dashly-MVP"
+        ]
+    },
     "appclips": {
         "apps": ["29W79KB64K.io.dashly.Dashly-MVP.Clip"]
     }

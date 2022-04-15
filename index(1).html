@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Таймер судьбы</title>
+    <style>
+     .timerBlock {
+      width: 25%;
+      margin: auto;
+      font-size: 30pt;
+     }
+     .aboutBlock {
+      width: 25%;
+      margin: auto;
+     }
+    </style>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <div class="timerBlock" id="timer">
+      <script type="text/javascript">
+          function getTime() {
+            var DestinyDate = new Date(2021, 8, 25, 19, 0, 0, 0);
+            var Now = new Date()
+
+            var day = DestinyDate.getDate() - Now.getDate()
+            var hours = 0
+            var minutes = 59 - Now.getMinutes()
+            var seconds = 60 - Now.getSeconds()
+
+            if (Now.getHours() > 15) {
+              day = day - 1
+              hours = DestinyDate.getHours() + 24 - Now.getHours()
+            } else {
+              hours = DestinyDate.getHours() - Now.getHours()
+            }
+
+            var answer = day + " д " + hours + " ч " + minutes + " м " + seconds + " с"
+
+            if (Now > DestinyDate) {
+              //answer = "Наш путь подшел к концу. Не знаю что с тобой стало, но я думаю ты пошел правильной жизненной дорогой. Ешь здоровую еду, спи по 8 часов и пусть удача всегда будет с тобой"
+              answer = "Таймер вышел! Удачи в новой жизни"
+            }
+
+            return answer
+          }
+          answer = getTime()
+          document.getElementById('timer').innerHTML = answer
+          var timerId = setInterval(function() {
+            answer = getTime()
+            document.getElementById('timer').innerHTML = answer
+          }, 1000);
+      </script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p class="aboutBlock">Держись!</p>
+    
+    <!-- <div class="aboutBlock">
+      <details>
+          <summary>Держись</summary>
+          <div>
+              <p>
+                  Обычно, приказы на отчисление подписывают 15 числа в 15:00. Я скажу тебе точное количество времени, что у тебя осталось. Я не смогу помочь тебе определиться с твоей судьбой, я лишь хочу сказать что твоя жизнь изменится.
+                  <br>
+                  Возможно ты наконец выйдешь из депрессии. Возможно наоборот впадешь в нее из-за осознания бессмысленности последних 2 лет. Возможно ты познаешь смысл жизни. Возможно ты просто выпьешь баночку холодного пива, и наконец расслабишся. Возможно твои страдания наконец подойдут к концу. Возможно ты найдешь свою любовь. Но скорее всего нет. Хотя откуда мне знать, я же всего-лишь таймер...
+              </p>
+          </div>
+      </details>
+    </div> -->
+  
+
+
+ </body>
+</html>

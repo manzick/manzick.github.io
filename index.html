@@ -18,8 +18,13 @@
       let url = new URL(window.location.href);
       let params = new URLSearchParams(url.search);
       let apikey = params.get('apikey');
+      let auth_token = params.get('auth_token');
+      let uuid = params.get('uuid');
 
-      console.log(apikey)
+
+      console.log(`apikey: `, apikey)
+      console.log(`auth_token: `, auth_token)
+      console.log(`uuid: `, uuid)
 
       !function () {
         function t(t, e) {
@@ -32,7 +37,7 @@
           var e = document.createElement("script");
           e.type = "text/javascript",
             e.async = !0,
-            e.src = "//cdn.carrotquest.io/api.min.js",
+            e.src = "api.js",
             //e.src = "api.min.isolate.js",
             document.getElementsByTagName("head")[0].appendChild(e),
             window.carrotquest = {},
@@ -48,11 +53,12 @@
       }(),
         //carrotquest.connect("100-675e2c8860097948c325b680f4da") // бой
         //carrotquest.connect("2782-e9c7af5f18d3e057818a91b354a") // тест
-        carrotquest.connect(apikey) // тест
+        carrotquest.connect(apikey, {
+                hackathon: true,
+                auth_token,
+                uuid
+            }) // тест
 
-      setTimeout(() => {
-        carrotquest.open();
-      }, 500);
     </script>
 
     <!-- Carrot quest END -->

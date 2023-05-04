@@ -19,55 +19,7 @@
 !function(){function t(t,e){return function(){window.carrotquestasync.push(t,arguments)}}if("undefined"==typeof carrotquest){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://dashly.k8s-dev.carrotquest.io/cdn/api.min.js",document.getElementsByTagName("head")[0].appendChild(e),window.carrotquest={},window.carrotquestasync=[],carrotquest.settings={};for(var n=["connect","track","identify","auth","onReady","addCallback","removeCallback","trackMessageInteraction"],a=0;a<n.length;a++)carrotquest[n[a]]=t(n[a])}}(),carrotquest.connect("1973-dc1a7a4e71ba9b9a961f418b0dd");
 </script>
 <!-- Carrot quest END -->
-    
-    <sc<!-- ript type="text/javascript">
-      let url = new URL(window.location.href);
-      let params = new URLSearchParams(url.search);
-      let apikey = params.get('apikey');
-      let auth_token = params.get('auth_token');
-      let uuid = params.get('uuid');
 
-
-      console.log(`apikey: `, apikey)
-      console.log(`auth_token: `, auth_token)
-      console.log(`uuid: `, uuid)
-
-      !function () {
-        function t(t, e) {
-          return function () {
-            window.carrotquestasync.push(t, arguments)
-          }
-        }
-
-        if ("undefined" == typeof carrotquest) {
-          var e = document.createElement("script");
-          e.type = "text/javascript",
-            e.async = !0,
-            e.src = "api.min.js",
-            //e.src = "api.min.isolate.js",
-            document.getElementsByTagName("head")[0].appendChild(e),
-            window.carrotquest = {},
-            window.carrotquestasync = [],
-            carrotquest.settings = {};
-          for (
-            var n = ["connect", "track", "identify", "auth", "oth", "onReady", "addCallback", "removeCallback", "trackMessageInteraction"],
-              a = 0;
-            a < n.length;
-            a++
-          ) carrotquest[n[a]] = t(n[a])
-        }
-      }(),
-        //carrotquest.connect("100-675e2c8860097948c325b680f4da") // бой
-        //carrotquest.connect("2782-e9c7af5f18d3e057818a91b354a") // тест
-        carrotquest.connect(apikey, {
-                hackathon: true,
-                auth_token,
-                uuid
-            }) // тест
-
-    </script> -->
-
-    <!-- Carrot quest END -->
 </head>
 <body>
 
